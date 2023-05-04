@@ -71,13 +71,14 @@ ul li.active a{
 
 }
 .review .box{
-    padding: 5rem;
+    padding: 10px;
      text-align: center;
      box-shadow:0 1rem 2rem rgba(0,0,0,.1);
-     border-radius: .5rem;
+     border-radius: 1px;
 }
 .review .review-slider{
     padding-bottom: 2rem;
+    
 
 }
 .review .box img{
@@ -105,6 +106,152 @@ ul li.active a{
     font-size: 1rem;
 
 }
+.review .heading {
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:40px;
+}
+/*@media(max-width:700px){ ki tsaghar la fenetre kol chy yesghar solution 
+    na3mlou une fenetre ma tesgharech 
+    .titre h1{
+        color: #fff;
+        font-size: 20px;
+    
+    } 
+    .principale.logo{
+        font-size: 10px;
+    }
+    ul li {
+        display: block;
+    }
+    
+}*/
+html,body{
+    max-width: 100%;
+    max-height:100%;
+    
+}
+/*------localisation---*/
+.local{
+   width:80%;
+   margin:auto;
+   text-align:center; 
+   padding-top: 50px;
+
+}
+.local-col{
+    flex-basis:32%;
+    border-radius:20px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+    float:left;
+    margin-left: 30px;
+    /*hi*/
+    display: inline-block;
+    margin-right: 40px; /* for adding a margin between each image */
+    text-align: left;
+  
+
+}
+.local-col img{
+    width:200px;
+    height: 200px;
+    display: block;
+    
+  
+   
+
+}
+
+.layer{
+    background: transparent;
+    height:200px;
+    width :200px;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom:0;
+    left: 80%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition:0.5s;
+
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1.5;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+  }
+  .local {
+    margin-bottom: 20px; 
+  }
+  .row{
+    margin-top: 20px; 
+  }
+  /*partie en savoir plus*/
+  /*section{padding:5rem 10%*/
+  .btn{
+    display: inline-block;
+    font-size: 15px;
+    padding:1rem 3rem;
+    background-color: #d083e3;
+    color:black;
+    cursor:pointer;
+    text-decoration: none;
+    
+
+
+  }
+  .btn:hover{
+    background: #a5a0a0;
+  }
+  .home-about{
+    margin-top: 40px; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.home-about .image{
+    flex: 1 1 10rem;
+}
+.home-about .image img{
+    width: 100%;
+}
+.home-about .content{
+    flex:1 1 20rem;
+    padding:10px;
+    background:lightgray;
+}
+.home-about .content h3{
+    font-size: 30px;
+    color:black;
+}
+.home-about .content p{
+    font-size: 15px;
+    padding: 1rem 0;
+    line-height: 2;
+    color: black;
+}
+
+
 
 /*.swiper {
     width: 100%;
@@ -125,3 +272,72 @@ ul li.active a{
     height: 100%;
     object-fit: cover;
   }*/
+
+
+
+  .commentaires {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.commentaires h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.commentaires label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.commentaires input[type="text"],
+.commentaires input[type="email"],
+.commentaires textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.commentaires textarea {
+    height: 150px;
+}
+
+.commentaires input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.commentaires input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.25s;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input[type="radio"]:checked ~ label {
+    color: #FFD700;
+  }
+  
