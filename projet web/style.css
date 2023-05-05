@@ -340,4 +340,8 @@ html,body{
   .rating input[type="radio"]:checked ~ label {
     color: #FFD700;
   }
+  .directoryPresentation img{
+    width: 100%;
+     height: auto;
+  }
   
